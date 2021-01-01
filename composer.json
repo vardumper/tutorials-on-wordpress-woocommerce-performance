@@ -10,7 +10,8 @@
         "wpackagist-theme/storefront": "^3.0",
         "wpackagist-plugin/woocommerce": "^4.8",
         "wpackagist-plugin/manage-notification-emails": "^1.6",
-        "vlucas/phpdotenv": "^5.2"
+        "vlucas/phpdotenv": "^5.2",
+        "wpackagist-plugin/mailgun": "^1.7"
     },
     "license": "GPL",
     "authors": [

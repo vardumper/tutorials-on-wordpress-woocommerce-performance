@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4aacba502ee33d33edb4f75993b9d8f4",
+    "content-hash": "a611af85f15c399ee723b1ae450dba6c",
     "packages": [
         {
             "name": "composer/installers",
@@ -723,6 +723,24 @@
                 }
             ],
             "time": "2020-09-14T15:57:31+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/mailgun",
+            "version": "1.7.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/mailgun/",
+                "reference": "tags/1.7.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailgun.1.7.3.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailgun/"
         },
         {
             "name": "wpackagist-plugin/manage-notification-emails",

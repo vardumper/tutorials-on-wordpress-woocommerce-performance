@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93868d7e2567bd933d1bc7de054fc3c2",
+    "content-hash": "4d6d75d210020cd9be62c9265851b9ae",
     "packages": [
         {
             "name": "composer/installers",
@@ -287,6 +287,24 @@
                 "wordpress"
             ],
             "time": "2020-04-16T21:44:57+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/manage-notification-emails",
+            "version": "1.6.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/manage-notification-emails/",
+                "reference": "tags/1.6.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/manage-notification-emails.1.6.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/manage-notification-emails/"
         },
         {
             "name": "wpackagist-plugin/woocommerce",

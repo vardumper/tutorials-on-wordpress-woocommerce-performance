@@ -1,0 +1,45 @@
+{
+    "name": "vardumper/my-project",
+    "description": "Initial Wordpress & Composer project setup with composer",
+    "type": "project",
+    "require": {
+        "composer/installers": "^1.9",
+        "johnpbloch/wordpress-core-installer": "^2.0",
+        "johnpbloch/wordpress-core": "^5.6",
+        "drupal-composer/preserve-paths": "^0.1.6",
+        "wpackagist-theme/storefront": "^3.0",
+        "wpackagist-plugin/woocommerce": "^4.8",
+        "wpackagist-plugin/manage-notification-emails": "^1.6"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "vardumper",
+            "email": "iroybot@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "repositories" : [{
+	"type" : "composer",
+	"url" : "https://wpackagist.org"
+    }, {
+	 "type" : "composer",
+	 "url" : "https://packagist.org"
+    }],
+    "extra" : { 
+	"installer-paths" : { 
+	    "wordpress/wp-content/plugins/{$name}/" : [ "type:wordpress-plugin" ],
+	    "wordpress/wp-content/themes/{$name}/" : [ "type:wordpress-theme" ]
+	},
+	"preserve-paths" : [ 
+	    "wordpress/robots.txt",
+	    "wordpress/wp-config.php",
+            "wordpress/wp-content/themes/storefront-child",
+	    "wordpress/wp-content/plugins/perfmatters"
+	],
+	"wordpress-install-dir" : "wordpress"
+    }
+    "scripts" : {
+	"serve" : "php -S localhost:8080 -t wordpress &> /dev/null"
+    }
+}

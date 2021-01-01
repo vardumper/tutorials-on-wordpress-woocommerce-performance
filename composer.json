@@ -9,7 +9,9 @@
         "drupal-composer/preserve-paths": "^0.1.6",
         "wpackagist-theme/storefront": "^3.0",
         "wpackagist-plugin/woocommerce": "^4.8",
-        "wpackagist-plugin/manage-notification-emails": "^1.6"
+        "wpackagist-plugin/manage-notification-emails": "^1.6",
+        "vlucas/phpdotenv": "^5.2",
+        "wpackagist-plugin/mailgun": "^1.7"
     },
     "license": "GPL",
     "authors": [
@@ -38,7 +40,7 @@
 	    "wordpress/wp-content/plugins/perfmatters"
 	],
 	"wordpress-install-dir" : "wordpress"
-    }
+    },
     "scripts" : {
 	"serve" : "php -S localhost:8080 -t wordpress &> /dev/null"
     }

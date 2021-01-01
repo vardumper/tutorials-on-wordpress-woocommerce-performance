@@ -39,4 +39,7 @@
 	],
 	"wordpress-install-dir" : "wordpress"
     }
+    "scripts" : {
+	"serve" : "php -S localhost:8080 -t wordpress &> /dev/null"
+    }
 }

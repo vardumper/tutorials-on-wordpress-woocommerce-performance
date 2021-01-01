@@ -15,7 +15,7 @@
             "email": "iroybot@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
     "repositories" : [{
 	"type" : "composer",
 	"url" : "https://wpackagist.org"

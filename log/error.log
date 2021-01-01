@@ -16,3 +16,57 @@ Stack trace:
 #4 /Users/erikpoehler/Sites/my-project/wordpress/index.php(17): require('/Users/erikpoeh...')
 #5 {main}
   thrown in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php on line 3
+[01-Jan-2021 19:18:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function incluude_once() in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php:3
+Stack trace:
+#0 /Users/erikpoehler/Sites/my-project/wordpress/wp-settings.php(525): include()
+#1 /Users/erikpoehler/Sites/my-project/wordpress/wp-config.php(134): require_once('/Users/erikpoeh...')
+#2 /Users/erikpoehler/Sites/my-project/wordpress/wp-load.php(37): require_once('/Users/erikpoeh...')
+#3 /Users/erikpoehler/Sites/my-project/wordpress/wp-blog-header.php(13): require_once('/Users/erikpoeh...')
+#4 /Users/erikpoehler/Sites/my-project/wordpress/index.php(17): require('/Users/erikpoeh...')
+#5 {main}
+  thrown in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php on line 3
+[01-Jan-2021 19:18:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function incluude_once() in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php:3
+Stack trace:
+#0 /Users/erikpoehler/Sites/my-project/wordpress/wp-settings.php(525): include()
+#1 /Users/erikpoehler/Sites/my-project/wordpress/wp-config.php(134): require_once('/Users/erikpoeh...')
+#2 /Users/erikpoehler/Sites/my-project/wordpress/wp-load.php(37): require_once('/Users/erikpoeh...')
+#3 /Users/erikpoehler/Sites/my-project/wordpress/wp-blog-header.php(13): require_once('/Users/erikpoeh...')
+#4 /Users/erikpoehler/Sites/my-project/wordpress/index.php(17): require('/Users/erikpoeh...')
+#5 {main}
+  thrown in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php on line 3
+[01-Jan-2021 19:18:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function incluude_once() in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php:3
+Stack trace:
+#0 /Users/erikpoehler/Sites/my-project/wordpress/wp-settings.php(525): include()
+#1 /Users/erikpoehler/Sites/my-project/wordpress/wp-config.php(134): require_once('/Users/erikpoeh...')
+#2 /Users/erikpoehler/Sites/my-project/wordpress/wp-load.php(37): require_once('/Users/erikpoeh...')
+#3 /Users/erikpoehler/Sites/my-project/wordpress/wp-blog-header.php(13): require_once('/Users/erikpoeh...')
+#4 /Users/erikpoehler/Sites/my-project/wordpress/index.php(17): require('/Users/erikpoeh...')
+#5 {main}
+  thrown in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php on line 3
+[01-Jan-2021 19:18:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function incluude_once() in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php:3
+Stack trace:
+#0 /Users/erikpoehler/Sites/my-project/wordpress/wp-settings.php(525): include()
+#1 /Users/erikpoehler/Sites/my-project/wordpress/wp-config.php(134): require_once('/Users/erikpoeh...')
+#2 /Users/erikpoehler/Sites/my-project/wordpress/wp-load.php(37): require_once('/Users/erikpoeh...')
+#3 /Users/erikpoehler/Sites/my-project/wordpress/wp-blog-header.php(13): require_once('/Users/erikpoeh...')
+#4 /Users/erikpoehler/Sites/my-project/wordpress/index.php(17): require('/Users/erikpoeh...')
+#5 {main}
+  thrown in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php on line 3
+[01-Jan-2021 19:18:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function incluude_once() in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php:3
+Stack trace:
+#0 /Users/erikpoehler/Sites/my-project/wordpress/wp-settings.php(525): include()
+#1 /Users/erikpoehler/Sites/my-project/wordpress/wp-config.php(134): require_once('/Users/erikpoeh...')
+#2 /Users/erikpoehler/Sites/my-project/wordpress/wp-load.php(37): require_once('/Users/erikpoeh...')
+#3 /Users/erikpoehler/Sites/my-project/wordpress/wp-blog-header.php(13): require_once('/Users/erikpoeh...')
+#4 /Users/erikpoehler/Sites/my-project/wordpress/index.php(17): require('/Users/erikpoeh...')
+#5 {main}
+  thrown in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php on line 3
+[01-Jan-2021 19:19:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function incluude_once() in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php:3
+Stack trace:
+#0 /Users/erikpoehler/Sites/my-project/wordpress/wp-settings.php(525): include()
+#1 /Users/erikpoehler/Sites/my-project/wordpress/wp-config.php(134): require_once('/Users/erikpoeh...')
+#2 /Users/erikpoehler/Sites/my-project/wordpress/wp-load.php(37): require_once('/Users/erikpoeh...')
+#3 /Users/erikpoehler/Sites/my-project/wordpress/wp-blog-header.php(13): require_once('/Users/erikpoeh...')
+#4 /Users/erikpoehler/Sites/my-project/wordpress/index.php(17): require('/Users/erikpoeh...')
+#5 {main}
+  thrown in /Users/erikpoehler/Sites/my-project/wordpress/wp-content/themes/storefront-child/functions.php on line 3

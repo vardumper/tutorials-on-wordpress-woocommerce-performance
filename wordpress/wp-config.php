@@ -1,7 +1,7 @@
 <?php
 @ini_set('display_errors', 1);
 @ini_set('display_startup_errors', 1);
-error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
+error_reporting(E_ALL);
 
 /** @desc this loads the composer autoload file */
 require_once dirname( __DIR__ ) . '/vendor/autoload.php';
@@ -34,43 +34,6 @@ defined('DB_NAME') or define('DB_NAME', $_ENV['DB_NAME']);
 defined('DB_USER') or define('DB_USER', $_ENV['DB_USER']);
 defined('DB_PASSWORD') or define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
 defined('SHOP_IS_ON_FRONT') or define('SHOP_IS_ON_FRONT', $_ENV['SHOP_IS_ON_FRONT']);
-
-$logfile = dirname(__DIR__) . '/log/error.log';
-$logdir = dirname( __FILE__ ) . '/log';
-define('ERRORLOGFILE', $logfile );
-define('WC_LOG_DIR', $logdir );
-
-if ($_ENV['WORDPRESS_ENV'] === 'development' || $_ENV['WORDPRESS_ENV'] === 'staging') {
-    define('WP_DEBUG', true);
-    define('WP_DEBUG_LOG', $logfile);
-    define('WP_DEBUG_DISPLAY', true);
-    define('SAVEQUERIES', true);
-    define('SCRIPT_DEBUG', true);
-    define('DIEONDBERROR', true);
-    define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
-    
-    /** optional: custom error handler
-    function exceptions_error_handler($severity, $message, $filename, $lineno) {
-        if (error_reporting() == 0) {
-            return;
-        }
-        if (error_reporting() & $severity) {
-            throw new ErrorException($message, 0, $severity, $filename, $lineno);
-        }
-    }
-    set_error_handler('exceptions_error_handler'); **/
-}
-
-if ($_ENV['WORDPRESS_ENV'] === 'production') {
-    define('WP_DEBUG', true);
-    define('WP_DEBUG_LOG', $logfile );
-    define('WP_DEBUG_DISPLAY', false);
-    define('SAVEQUERIES', false);
-    define('SCRIPT_DEBUG', false);
-    define('DIEONDBERROR', false);
-}
-
-error_log(print_r($_ENV, true));
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -121,7 +84,40 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+$logfile = dirname(__DIR__) . '/log/error.log';
+$logdir = dirname( __FILE__ ) . '/log';
+define('ERRORLOGFILE', $logfile );
+define('WC_LOG_DIR', $logdir );
+
+if ($_ENV['WORDPRESS_ENV'] === 'development' || $_ENV['WORDPRESS_ENV'] === 'staging') {
+    define('WP_DEBUG', true);
+    define('WP_DEBUG_LOG', $logfile);
+    define('WP_DEBUG_DISPLAY', true);
+    define('SAVEQUERIES', true);
+    define('SCRIPT_DEBUG', true);
+    define('DIEONDBERROR', true);
+    define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
+    
+    /** optional: custom error handler
+     function exceptions_error_handler($severity, $message, $filename, $lineno) {
+     if (error_reporting() == 0) {
+     return;
+     }
+     if (error_reporting() & $severity) {
+     throw new ErrorException($message, 0, $severity, $filename, $lineno);
+     }
+     }
+     set_error_handler('exceptions_error_handler'); **/
+}
+
+if ($_ENV['WORDPRESS_ENV'] === 'production') {
+    define('WP_DEBUG', true);
+    define('WP_DEBUG_LOG', $logfile );
+    define('WP_DEBUG_DISPLAY', false);
+    define('SAVEQUERIES', false);
+    define('SCRIPT_DEBUG', false);
+    define('DIEONDBERROR', false);
+}
 
 /* That's all, stop editing! Happy publishing. */
 

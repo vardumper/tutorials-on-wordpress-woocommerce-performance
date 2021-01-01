@@ -1,6 +1,6 @@
 <?php
 /** @desc make sure is_plugin_active() is available in here */
-incluude_once(ABSPATH . 'wp-admin/includes/plugin.php');
+include_once(ABSPATH . 'wp-admin/includes/plugin.php');
 
 /** @desc override Mailgun settings and return API Credentials from .env file instead */
 if (is_plugin_active('mailgun/mailgun.php')) {

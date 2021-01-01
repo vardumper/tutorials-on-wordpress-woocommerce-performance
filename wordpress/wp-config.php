@@ -24,14 +24,12 @@ $dotenv->load();
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'my-project' );
-
-/** MySQL database username */
-define( 'DB_USER', 'my-project' );
-
-/** MySQL database password */
-define( 'DB_PASSWORD', 'my-password' );
+defined('WORDPRESS_ENV') or define('WORDPRESS_ENV', $_ENV['WORDPRESS_ENV']);
+defined('WP_HOME') or define('WP_HOME', $_ENV['WP_HOME']);
+defined('DB_NAME') or define('DB_NAME', $_ENV['DB_NAME']);
+defined('DB_USER') or define('DB_USER', $_ENV['DB_USER']);
+defined('DB_PASSWORD') or define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
+defined('SHOP_IS_ON_FRONT') or define('SHOP_IS_ON_FRONT', $_ENV['SHOP_IS_ON_FRONT']);
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0594b4ac32f2facd727748c45b82f5a6",
+    "content-hash": "38d15dd13b497b210ff5fab4295f1581",
     "packages": [
         {
             "name": "composer/installers",
@@ -287,6 +287,24 @@
                 "wordpress"
             ],
             "time": "2020-04-16T21:44:57+00:00"
+        },
+        {
+            "name": "wpackagist-theme/storefront",
+            "version": "3.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/storefront/",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/storefront.3.0.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/storefront/"
         }
     ],
     "packages-dev": [],

@@ -85,11 +85,11 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 $logfile = dirname(__DIR__) . '/log/error.log';
-$logdir = dirname( __FILE__ ) . '/log';
+$logdir = dirname( __DIR__ ) . '/log';
 define('ERRORLOGFILE', $logfile );
 define('WC_LOG_DIR', $logdir );
 
-if ($_ENV['WORDPRESS_ENV'] === 'development' || $_ENV['WORDPRESS_ENV'] === 'staging') {
+if (WORDPRESS_ENV === 'development' || WORDPRESS_ENV === 'staging') {
     define('WP_DEBUG', true);
     define('WP_DEBUG_LOG', $logfile);
     define('WP_DEBUG_DISPLAY', true);
@@ -110,7 +110,7 @@ if ($_ENV['WORDPRESS_ENV'] === 'development' || $_ENV['WORDPRESS_ENV'] === 'stag
      set_error_handler('exceptions_error_handler'); **/
 }
 
-if ($_ENV['WORDPRESS_ENV'] === 'production') {
+if (WORDPRESS_ENV === 'production') {
     define('WP_DEBUG', true);
     define('WP_DEBUG_LOG', $logfile );
     define('WP_DEBUG_DISPLAY', false);
